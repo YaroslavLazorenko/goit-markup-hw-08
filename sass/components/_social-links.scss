@@ -1,0 +1,15 @@
+.social-links {
+  &__container {
+    margin-right: 93px;
+  }
+
+  &__caption {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}

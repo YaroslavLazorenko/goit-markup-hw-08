@@ -1,0 +1,28 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__address-container {
+    margin-right: 70px;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__subscription-head {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}

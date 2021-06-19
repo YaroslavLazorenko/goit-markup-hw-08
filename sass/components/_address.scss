@@ -1,0 +1,21 @@
+.address {
+  &__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__postal-link {
+    color: $primary-white-color;
+  }
+
+  &__email-link,
+  &__tel-link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
