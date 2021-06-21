@@ -7,7 +7,7 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
   }
 
@@ -15,7 +15,7 @@
     margin-bottom: 10px;
 
     font-size: 12px;
-    line-height: 1.14;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: $secondary-text-color;
 
@@ -36,7 +36,7 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 46px;
+    padding-left: 42px;
 
     transition: border-color $transition-duration $transition-timing-function;
 
@@ -124,9 +124,11 @@
     margin-bottom: 30px;
 
     vertical-align: middle;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03;
+    word-spacing: -1px;
     color: $secondary-text-color;
   }
 
@@ -143,6 +145,19 @@
     &:hover,
     &:focus {
       background-color: #188ce8;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    &__head {
+      line-height: 1.15;
+    }
+
+    &__checkbox-policy {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 }
