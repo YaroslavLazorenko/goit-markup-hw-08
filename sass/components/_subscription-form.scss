@@ -6,13 +6,9 @@
   &__field {
     margin-bottom: 20px;
   }
-  /* &__field {
-    margin-right: 12px;
-  } */
 
   &__input {
     width: 450px;
-    /*  width: 358px;*/
     height: 50px;
     padding: 0 16px;
 
@@ -47,5 +43,16 @@
 @media screen and (min-width: 1200px) {
   .subscription-form {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__input {
+      width: 358px;
+    }
+
+    &__field {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
   }
 }
