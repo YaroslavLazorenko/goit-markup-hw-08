@@ -1,8 +1,4 @@
 .social-links {
-  &__container {
-    margin-right: 93px;
-  }
-
   &__caption {
     margin-bottom: 20px;
 
@@ -11,5 +7,18 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $primary-white-color;
+  }
+
+  &__container {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    &__container {
+      margin-bottom: 0;
+      margin-right: 93px;
+    }
   }
 }

@@ -6,7 +6,7 @@
     line-height: 1.71;
 
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
   }
 
@@ -17,5 +17,13 @@
   &__email-link,
   &__tel-link {
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }

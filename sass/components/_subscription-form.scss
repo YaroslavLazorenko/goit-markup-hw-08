@@ -1,12 +1,18 @@
 .subscription-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__field {
-    margin-right: 12px;
+    margin-bottom: 20px;
   }
+  /* &__field {
+    margin-right: 12px;
+  } */
 
   &__input {
-    width: 358px;
+    width: 450px;
+    /*  width: 358px;*/
     height: 50px;
     padding: 0 16px;
 
@@ -35,5 +41,11 @@
   &__icon {
     margin-left: 10px;
     fill: $primary-white-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
   }
 }
