@@ -1,35 +1,78 @@
-.contacts {
-  display: flex;
-
-  &_end {
-    margin-left: auto;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
   }
+}
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  &__link {
+@media screen and (min-width: 768px) {
+  .contacts {
     display: flex;
-    align-items: center;
-    padding: 32px 0;
+    flex-direction: column;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $secondary-text-color;
+    &_end {
+      margin-left: auto;
+    }
 
-    transition: color $transition-duration $transition-timing-function;
+    &__link {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $secondary-text-color;
+
+      transition: color $transition-duration $transition-timing-function;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    &__icon-envelope {
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
+      fill: currentColor;
+    }
+
+    &__icon-phone {
+      width: 10px;
+      height: 14px;
+      margin-right: 8px;
+      fill: currentColor;
     }
   }
+}
 
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__link {
+      padding: 32px 0;
+
+      font-size: 14px;
+      line-height: 1.14;
+    }
+
+    &__icon-envelope {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+
+    &__icon-phone {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
   }
 }

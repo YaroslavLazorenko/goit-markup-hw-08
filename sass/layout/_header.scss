@@ -5,15 +5,51 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
+}
 
-  &__nav {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 767px) {
+  .header {
+    &__mobile-menu-btn {
+      line-height: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    &__container {
+      padding: 10px 0;
+    }
   }
+}
 
-  &__logo {
-    margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header {
+    &__container {
+      justify-content: row;
+    }
+
+    &__mobile-menu-btn {
+      display: none;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-right: 88px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__logo {
+      margin-right: 93px;
+    }
   }
 }
