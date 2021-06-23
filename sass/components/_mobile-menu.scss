@@ -17,6 +17,11 @@
     pointer-events: none;
 
     &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+
       position: relative;
       padding: 48px 40px;
     }
@@ -46,10 +51,6 @@
       pointer-events: auto;
     }
 
-    &__nav {
-      margin-bottom: 302px;
-    }
-
     &__item:not(last-child) {
       margin-bottom: 32px;
     }
@@ -68,6 +69,14 @@
       }
     }
 
+    & .mobile-menu__link_current-page {
+      color: $accent-color;
+    }
+
+    &__contacts-container {
+      display: block;
+    }
+
     &__contacts {
       margin-bottom: 64px;
     }
@@ -75,18 +84,19 @@
     &__phone {
       margin-bottom: 32px;
 
+      color: $accent-color;
       font-size: 34px;
       line-height: 1.18;
     }
 
     &__email {
+      color: $secondary-text-color;
       font-size: 24px;
       line-height: 1.17;
     }
 
     &__contacts-link {
-      color: $secondary-text-color;
-
+      color: inherit;
       transition: color $transition-duration $transition-timing-function;
 
       &:hover,
