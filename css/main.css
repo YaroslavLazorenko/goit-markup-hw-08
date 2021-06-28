@@ -62,7 +62,6 @@ body {
 }
 
 .container {
-  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -457,12 +456,11 @@ body {
 }
 
 .subscription-form__field {
-  flex-basis: 450px;
   margin-bottom: 20px;
 }
 
 .subscription-form__input {
-  width: 100%;
+  width: 93.75vw;
   height: 50px;
   padding: 0 16px;
   font-size: 16px;
@@ -490,6 +488,12 @@ body {
 .subscription-form__icon {
   margin-left: 10px;
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription-form__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
